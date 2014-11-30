@@ -1,0 +1,42 @@
+{
+  "name": "js-kata",
+  "version": "0.0.0",
+  "main": "lib/js-kata.js",
+  "description": "The best module ever.",
+  
+      "homepage": "user/repo",
+    
+    "bugs": "user/repo/issues",
+  "author": {
+    "name": "Marcin Kania",
+    "email": "mkania86@gmail.com" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "user/repo"
+  },
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "js-kata"  ,
+        "" 
+  ],
+  "devDependencies": {
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "load-grunt-tasks": "^0.4.0",
+    "time-grunt": "^0.3.1",
+    "grunt-mocha-cli": "^1.9.0",
+    "jshint-stylish": "^0.2.0" 
+  },
+  "scripts": {
+    "test": "grunt" 
+  }  ,
+      "bin": {
+        "js-kata": "cli.js"
+    },
+    "preferGlobal": "true" 
+}
