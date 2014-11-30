@@ -1,3 +1,2 @@
-.idea*
-target
-*.iml
+game-of-life-js/node_modules/
+game-of-life-js/.idea/
