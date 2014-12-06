@@ -28,7 +28,7 @@ public class GildedRoseTest {
     @Test
     public void qualityDecreases() {
         //given
-        int initialQuality = 5;
+        int initialQuality = 2;
         Item item = new Item("foo", 10, initialQuality);
         GildedRose.addItem(item);
 
@@ -159,17 +159,16 @@ public class GildedRoseTest {
     }
 
     @Test
-    @Ignore
     public void conjuredItemsDegradeInQualityTwiceAsFastAsNormalItems() {
         //given
-        Item item = new Item(CONJURED_MANA_CAKE, 5, 5);
+        Item item = new Item(CONJURED_MANA_CAKE, 20, 10);
         GildedRose.addItem(item);
 
         //when
         GildedRose.updateQuality();
 
         //then
-        assertThat(item.getQuality()).isEqualTo(3);
+        assertThat(item.getQuality()).isEqualTo(8);
     }
 
 
